@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optimizador</title>
+    <link rel="stylesheet" href="./src/longitud.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <section>
+      <div>
+        <h1>Optimizador de corte por longidud</h1>
+      </div>
+      <hr />
+      <div>
+        <label for="unidadesMedida">Unidades de medida</label>
+        <select
+          name="unidadesMedida"
+          id="unidadesMedida"
+          class="input-material"
+        >
+          <option value="" selected>Seleccionar...</option>
+          <option value="m">metros</option>
+          <option value="cm">centimetros</option>
+          <option value="mm">milimetros</option>
+        </select>
+      </div>
+      <hr />
+      <div>
+        <label for="descripcionMaterial">Descripción del Material</label>
+        <input type="text" id="descripcionMaterial" class="input-material" />
+      </div>
+      <hr />
+      <div>
+        <label for="longitudMaterial"
+          >Ingrese la longitud del material a utilizar</label
+        >
+        <input type="number" id="longitudMaterial" class="input-material" />
+      </div>
+      <hr />
+      <div>
+        <h2>Despunte del material</h2>
+        <label for="despunteIzq">Despunte Izquierda</label>
+        <input type="number" id="despunteIzq" class="input-material" />
+        <label for="despunteDer">Despunte Derecha</label>
+        <input type="number" id="despunteDer" class="input-material" />
+      </div>
+      <hr />
+      <div>
+        <label for="grosorHta">Grosor de la Herramienta de corte</label>
+        <input type="number" id="grosorHta" class="input-material" />
+      </div>
+      <hr />
+    </section>
+    <!-- Especificaciones de corte -->
+    <section>
+      <div>
+        <h2>Especificaciones de corte</h2>
+      </div>
+      <div class="contenedor">
+        <div class="col-6">
+          <div class="longClass">
+            <div>
+              <label for="refCorte">Referencia</label>
+              <input
+                type="text"
+                class="longInputs"
+                id="refCorte"
+                placeholder="Referencia"
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <label for="longCorte">Longitud</label>
+              <input
+                type="number"
+                class="longInputs"
+                id="longCorte"
+                placeholder="Longitud"
+              />
+            </div>
+            <div>
+              <label for="cantCorte">Cantidad</label>
+              <input
+                type="number"
+                class="longInputs"
+                id="cantCorte"
+                placeholder="Cantidad"
+              />
+            </div>
+            <div>
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                id="botonAgregar"
+              >
+                Agregar
+              </button>
+            </div>
+          </div>
+          <div id="listaCorte"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./src/longitud.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.longClass {
+    display: flex;
+    text-align: center;
+  }
+  
+  .longInputs {
+    text-align: center;
+  }
+  
+  #botonAgregar {
+    margin: 20px 0px 0px 10px;
+  }
+  
